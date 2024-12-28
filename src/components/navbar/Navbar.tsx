@@ -1,6 +1,5 @@
 import {
   IconBook2,
-  IconBrandGithub,
   IconDeviceLaptop,
   IconHeartHandshake,
   IconHome,
