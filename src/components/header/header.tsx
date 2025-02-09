@@ -3,7 +3,7 @@ import { HoverBorderGradient } from "../ui/hover-border-gradient";
 import { Spotlight } from "../ui/spotlight";
 import { TextRevealCard } from "../ui/text-reveal-card";
 import { TypewriterEffectSmooth } from "../ui/typewriter-effect";
-export function Header() {
+export default function Header() {
   const words = [
     {
       text: "I",
