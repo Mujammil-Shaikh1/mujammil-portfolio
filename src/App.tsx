@@ -6,7 +6,7 @@ const StepperLoading = lazy(
 );
 
 const App = () => {
-  const [loading, setLoading] = useState<boolean>(false);
+  const [loading, setLoading] = useState<boolean>(true);
   const loadingStates = [
     { text: "Setting up the components..." },
     { text: "Writing clean code..." },

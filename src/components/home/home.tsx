@@ -1,11 +1,21 @@
-import { Header } from "../header/header";
-import { Navbar } from "../navbar/Navbar";
+import { lazy, Suspense } from "react";
+
+const Header = lazy(() => import("../header/header"));
+const Navbar = lazy(() => import("../navbar/Navbar"));
+const HeroImage = lazy(() => import("../hero-image/HeroImage"));
 
 const Home = () => {
   return (
-    <div>
-      <Header />
-      <Navbar />
+    <div className="h-screen overflow-auto">
+      <Suspense fallback={<></>}>
+        <Header />
+      </Suspense>
+      <Suspense fallback={<></>}>
+        <HeroImage />
+      </Suspense>
+      <Suspense fallback={<></>}>
+        <Navbar />
+      </Suspense>
     </div>
   );
 };

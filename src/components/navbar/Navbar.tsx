@@ -8,7 +8,7 @@ import {
 } from "@tabler/icons-react";
 import { FloatingDock } from "../ui/floating-dock";
 
-export function Navbar() {
+export default function Navbar() {
   const links = [
     {
       title: "Home",
