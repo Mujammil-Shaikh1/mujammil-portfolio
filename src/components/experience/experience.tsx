@@ -27,7 +27,7 @@ const backendTech = [
   { name: "NPM", rating: 4.5 },
 ];
 
-const MyExperience = () => {
+const Experience = () => {
   return (
     <div>
       <ContentHeader title="My Experience" subTitle="What Skill I Have" />
@@ -45,4 +45,4 @@ const MyExperience = () => {
   );
 };
 
-export default MyExperience;
+export default Experience;
