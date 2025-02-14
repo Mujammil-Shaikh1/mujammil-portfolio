@@ -1,8 +1,8 @@
-import { Cover } from "../ui/cover";
 // import { MujammilPic } from "../../assets";
 import { CardSpotlight } from "../ui/card-spotlight";
 import { IconCertificate, IconCode, IconTerminal2 } from "@tabler/icons-react";
 import { HoverBorderGradient } from "../ui/hover-border-gradient";
+import ContentHeader from "../common/section-header";
 
 interface cardConfigState {
   id: string;
@@ -34,9 +34,7 @@ const cardConfig = [
 const AboutMe = () => {
   return (
     <div className="mt-18 px-24">
-      <h6 className="text-4xl md:text-4xl lg:text-6xl font-semibold max-w-7xl mx-auto text-center mt-6 relative z-20 py-6 bg-clip-text text-transparent bg-gradient-to-b from-neutral-800 via-neutral-700 to-neutral-700 dark:from-neutral-800 dark:via-white dark:to-white">
-        <Cover>About Me</Cover>
-      </h6>
+      <ContentHeader title="About Me" subTitle="Get To Know" />
       <div className="flex  items-center justify-center  h-[550px]">
         <div className="w-full h-full flex items-center justify-center">
           {/* <div className=" w-[55%] bg-cyan-900 aspect-square bg-gradient-to-r from-transparent via-[#4df0ff] to-transparent rounded-2xl grid place-items-center">
@@ -69,7 +67,7 @@ const AboutMe = () => {
               );
             })}
           </div>
-          <div className="flex flex-col gap-5 mb-20">
+          <div className="flex flex-col gap-5 ">
             <p className="text-justify text-neutral-200 text-base  leading-7">
               HI, I'm Mujammil Shaikh, Courteous and enthusiastic person,I am
               interested in IT and everything in its orbit 👨‍🚀. I recently began
