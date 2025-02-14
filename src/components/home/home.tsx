@@ -1,5 +1,6 @@
 import { lazy, Suspense } from "react";
-import MyExperience from "../my-experience/my-experience";
+import Experience from "../experience/experience";
+import Portfolio from "../portfolio/Portfolio";
 
 const Header = lazy(() => import("../header/header"));
 const Navbar = lazy(() => import("../navbar/navbar"));
@@ -17,7 +18,8 @@ const Home = () => {
         <Header />
         <HeroImage />
         <AboutMe />
-        <MyExperience />
+        <Experience />
+        <Portfolio />
         <Navbar />
       </Suspense>
     </div>
