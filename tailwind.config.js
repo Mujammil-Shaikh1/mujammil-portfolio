@@ -11,6 +11,7 @@ module.exports = {
     extend: {
       animation: {
         spotlight: "spotlight 2s ease .75s 1 forwards",
+        move: "move 5s linear infinite",
       },
       keyframes: {
         spotlight: {
@@ -23,15 +24,19 @@ module.exports = {
             transform: "translate(-50%,-40%) scale(1)",
           },
         },
+        move: {
+          "0%": { transform: "translateX(-200px)" },
+          "100%": { transform: "translateX(200px)" },
+        },
       },
     }
   },
   plugins: [
     addVariablesForColors,
-    function ({ matchUtilities, theme }: any) {
+    function ({ matchUtilities, theme }) {
       matchUtilities(
         {
-          "bg-dot-thick": (value: any) => ({
+          "bg-dot-thick": (value) => ({
             backgroundImage: `url("${svgToDataUri(
               `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="16" height="16" fill="none"><circle fill="${value}" id="pattern-circle" cx="10" cy="10" r="2.5"></circle></svg>`
             )}")`,
@@ -44,7 +49,7 @@ module.exports = {
 };
 
 // This plugin adds each Tailwind color as a global CSS variable, e.g. var(--gray-200).
-function addVariablesForColors({ addBase, theme }: any) {
+function addVariablesForColors({ addBase, theme }) {
   let allColors = flattenColorPalette(theme("colors"));
   let newVars = Object.fromEntries(
     Object.entries(allColors).map(([key, val]) => [`--${key}`, val])
