@@ -59,13 +59,13 @@ export const CardSpotlight = ({
       >
         {isHovering && (
           <CanvasRevealEffect
-            animationSpeed={2}
-            containerClassName="bg-transparent absolute inset-0 pointer-events-none"
+            animationSpeed={3}
+            containerClassName="bg-transparent absolute inset-0 pointer-events-none bg-black"
             colors={[
-              [59, 130, 246],
-              [139, 92, 246],
+              [0, 255, 255],
+              [34, 211, 238],
             ]}
-            dotSize={3}
+            dotSize={2.5}
           />
         )}
       </motion.div>

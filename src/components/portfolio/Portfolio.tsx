@@ -53,6 +53,7 @@ const projects: Project[] = [
       "Food listing",
       "Browse category and foods",
       "Static design",
+      "Single Page Application",
       "Animation On Scroll",
       "Responsive designing",
     ],
@@ -150,7 +151,7 @@ export default function Portfolio() {
   return (
     <div>
       <ContentHeader title="Portfolio" subTitle="My Recent Work" />
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 mt-10 gap-10 w-full px-4 sm:px-8 md:px-16 lg:px-32">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 mt-10 gap-10 w-full px-4 ">
         {projects.map((project: Project, index) => {
           return (
             <div key={index}>
@@ -168,7 +169,7 @@ const PortfolioCard: React.FC<{ project: Project }> = ({ project }) => {
 
   return (
     <div>
-      <div className="w-full relative rounded-3xl overflow-hidden  bg-gradient-to-r from-[#1D2235] to-[#121318] p-8 ">
+      <div className="w-full h-[520px] relative rounded-3xl overflow-hidden  bg-gradient-to-r from-[#1D2235] to-[#121318] p-8 ">
         <Rays />
         <Beams />
         <div className="relative z-10">

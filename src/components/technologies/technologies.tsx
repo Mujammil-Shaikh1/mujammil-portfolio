@@ -127,7 +127,7 @@ const techData: TechData[] = [
 
 const Technologies = () => {
   return (
-    <div className="h-96">
+    <div className="h-auto">
       <ContentHeader title="Technologies" subTitle="Experience In" />
       <Skeleton />
     </div>
@@ -210,7 +210,7 @@ const Skeleton = () => {
   }, []);
 
   return (
-    <div className="p-8 overflow-hidden h-[250px] relative flex items-center justify-center">
+    <div className="p-8 overflow-hidden h-[200px] relative flex items-center justify-center">
       <div className="flex flex-row flex-shrink-0 justify-center items-center gap-2">
         {techData.map((tech, index) => (
           <Container key={tech.id} className={`h-16 w-16 circle-${index + 1}`}>
