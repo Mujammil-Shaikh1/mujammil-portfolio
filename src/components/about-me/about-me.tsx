@@ -33,7 +33,7 @@ const cardConfig = [
 
 const AboutMe = () => {
   return (
-    <div className="mt-18 px-24">
+    <div className="mt-18">
       <ContentHeader title="About Me" subTitle="Get To Know" />
       <div className="flex  items-center justify-center  h-[550px]">
         <div className="w-full h-full flex items-center justify-center">

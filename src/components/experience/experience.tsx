@@ -31,7 +31,7 @@ const Experience = () => {
   return (
     <div>
       <ContentHeader title="My Experience" subTitle="What Skill I Have" />
-      <div className="flex  gap-16 justify-center items-center ">
+      <div className="flex lg:gap-20 justify-center items-center md:flex-wrap md:gap-0 ">
         <ExperienceCard
           technologies={frontendTech}
           title="Frontend Development"
