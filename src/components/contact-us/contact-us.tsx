@@ -35,7 +35,7 @@ const cardConfig = [
 
 const ContactUs = () => {
   return (
-    <div>
+    <div className="px-20">
       <ContentHeader title="Contact Us" subTitle="Get In Touch" />
       <div className="w-full h-auto grid grid-cols-[40%_60%] my-10">
         <div className=" flex flex-col gap-10 justify-center items-center">
@@ -43,7 +43,7 @@ const ContactUs = () => {
             return (
               <CardSpotlight
                 key={card.id}
-                className="w-[300px] h-44 flex justify-around flex-col  items-center"
+                className="w-[350px] h-44 flex justify-around flex-col  items-center"
               >
                 {card.icon}
                 <div className="flex justify-center flex-col items-center gap-[4px]">
@@ -55,9 +55,10 @@ const ContactUs = () => {
                     {card.subTitle}
                   </p>
                 </div>
-                <span className="text-cyan-500 text-sm z-20 cursor-pointer hover:text-cyan-300">
+                <div className="text-cyan-500 text-sm z-20 flex  justify-center items-center cursor-pointer hover:text-cyan-300">
                   Send message
-                </span>
+                  <IconChevronRight className="w-5 h-5 mt-1" />
+                </div>
               </CardSpotlight>
             );
           })}

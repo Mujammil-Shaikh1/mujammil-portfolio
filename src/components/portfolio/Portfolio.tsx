@@ -149,7 +149,7 @@ const projects: Project[] = [
 
 export default function Portfolio() {
   return (
-    <div>
+    <div className="px-20">
       <ContentHeader title="Portfolio" subTitle="My Recent Work" />
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 mt-10 gap-10 w-full px-4 ">
         {projects.map((project: Project, index) => {

@@ -6,10 +6,7 @@ import { TypewriterEffectSmooth } from "../ui/typewriter-effect";
 export default function Header() {
   const words = [
     {
-      text: "I",
-    },
-    {
-      text: "am",
+      text: "I'm",
     },
     {
       text: "a",

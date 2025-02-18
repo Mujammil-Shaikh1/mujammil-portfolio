@@ -35,7 +35,7 @@ const AboutMe = () => {
   return (
     <div className="mt-18">
       <ContentHeader title="About Me" subTitle="Get To Know" />
-      <div className="flex  items-center justify-center  h-[550px]">
+      <div className="flex  items-center justify-center  h-[550px] px-20">
         <div className="w-full h-full flex items-center justify-center">
           {/* <div className=" w-[55%] bg-cyan-900 aspect-square bg-gradient-to-r from-transparent via-[#4df0ff] to-transparent rounded-2xl grid place-items-center">
             <div className="rounded-2xl overflow-hidden rotate-[10deg] transition-all duration-500 ease-in-out hover:rotate-0">
